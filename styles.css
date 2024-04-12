@@ -16,6 +16,11 @@ h1{
     font-size: 50px;
 }
 
+h2{
+    font-weight: 800;
+    font-size: 50px;
+}
+
 h3{
     font-weight: bold;
     font-size: 20px;
@@ -26,16 +31,26 @@ h4{
     font-size: 20px;
 }
 
+p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
 .wrapper{
     width: 960px;
     margin: 0 auto;
+    background-color: yellow;
 }
 
 
 .hero-banner{
     background-color: #007FFF;
-    height: 100vh;
-    padding: 0 20px;
+    min-height: 65vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-banner h1{
@@ -45,7 +60,7 @@ h4{
 
 .hero-banner h3{
     color: white;
-    margin: 0;
+    margin: 0 0 35px;
 }
 
 
@@ -55,21 +70,103 @@ h4{
 }
 
 .character1{
-
+    background: url(img/circle-guy.png) no-repeat 0 0;
+    background-size: contain;
+    width: 363px;
+    height: 344px;
+    position: absolute; top: 30%; right: 5%;
+    transform: rotate(15deg);
 }
 
 .character2{
-    
+    background: url(img/sticky-guy-1.png) no-repeat 0 0;
+    background-size: contain;
+    width: 309px;
+    height: 371px;
+    position: absolute; top: 213px; right: 277px;
 }
 
 .character3{
-    
+    background: url(img/eish-guy.png) no-repeat 0 0;
+    background-size: contain;
+    width: 297px;
+    height: 286px;
+    position: absolute; bottom: 30px; right: 109px;
 }
 
 a.cta,button.cta{
-
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: #007FFF;
+    display: inline-block;
+    box-shadow: 0 0 0 10px rgba(0,127,255,.15);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 a.cta.alt,button.cta.alt{
-    
+    background-color: #FFD400;
+    color: #111111;
+    box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+  
 }
+
+/**/
+
+
+nav{
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0,0,0,.2);
+    position: sticky;
+    top: 0;
+}
+
+nav .logo{
+    display: block;
+    width: 300px;
+    height: 40px;
+    position: absolute; top: 50%; left: 0;
+    margin-top: -20px;
+    margin-left: 30px;
+    background: url(img/logo.png) no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+
+nav ul li{
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 35px 10px;
+    line-height: 30px;
+}
+
+/**/
+
+.moreinfo{
+    text-align: center;
+}
+
+
+
