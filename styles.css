@@ -76,6 +76,11 @@ p{
     height: 344px;
     position: absolute; top: 30%; right: 5%;
     transform: rotate(15deg);
+
+    animation-name: move1;
+    animation-duration: 1.65s;
+    animation-iteration-count: infinite;
+
 }
 
 .character2{
@@ -84,6 +89,10 @@ p{
     width: 309px;
     height: 371px;
     position: absolute; top: 213px; right: 277px;
+    animation-name: move1;
+    animation-duration: 1.65s;
+    animation-iteration-count: infinite;
+
 }
 
 .character3{
@@ -92,6 +101,10 @@ p{
     width: 297px;
     height: 286px;
     position: absolute; bottom: 30px; right: 109px;
+    animation-name: move1;
+    animation-duration: 1.65s;
+    animation-iteration-count: infinite;
+
 }
 
 a.cta,button.cta{
@@ -376,3 +389,9 @@ footer a{
 }
 
 
+@keyframes move1{
+
+    60%{
+        transform: translateX(30px) rotate(5deg);
+    }
+}
