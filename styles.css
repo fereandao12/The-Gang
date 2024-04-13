@@ -301,13 +301,14 @@ footer a{
 }
 
 .popup .blanket{
-    background-color: rgba(0,0,0.7);
-    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
+    left: 0;
 }
-
+    
 .popup .content{
     box-sizing:border-box;
 	width: 960px;
@@ -340,11 +341,7 @@ footer a{
     cursor: pointer;
 }
 
-.popup .row{
-    
-}
-
-.popup .row::after{
+.popup .row:after{
     content: "";
     display: table;
     clear: both;
